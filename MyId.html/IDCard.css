@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ID Card */
+.id-card {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header */
+.card-header {
+    height: 185px;
+    background-color: #0c3155;
+    color: white;
+    padding-top: 25px;
+}
+
+.college-logo{
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+.profile {
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    border: 5px solid white;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.profile-image {
+    border-radius: 50%;
+}
+
+
+/* Student Details */
+.card-body {
+    padding: 30px 20px 25px;
+}
+
+.name-section {
+    color: #102e49;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.class-details {
+    color: #414b59;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.details hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 25px;
+}
+
+.id-line {
+    color: #303c4b;
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+/* ID Number */
+.id-line {
+    display: inline-block;
+    background-color: #0c3155;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.id-number strong {
+    margin-left: 8px;
+}
+
+/* Barcode */
+.barcode {
+    width: 165px;
+    height: 55px;
+    margin: 30px auto 5px;
+
+    background: repeating-linear-gradient(
+        90deg,
+        #102e49 0px,
+        #102e49 4px,
+        white 4px,
+        white 8px
+    );
+}
+
+/* Footer */
+.card-footer {
+    background-color: #f5f6f8;
+    color: #414b59;
+    padding: 15px;
+    font-size: 16px;
+}
+/* Responsive Design */
+@media (max-width: 400px) {
+    .id-card {
+        width: 100%;
+    }
+}
